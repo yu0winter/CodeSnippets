@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>cIndex</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>_typedef NS_ENUM(NSUInteger, &lt;#OTHERSPACE_INDEX#&gt;) {
+    &lt;#OTHERSPACE_INDEX#&gt;,
+    &lt;#OTHERSPACE_INDEX2#&gt;,
+};</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>9530F0EF-80E9-4725-888A-D140398BC91E</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>cIndex</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>cIndex</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

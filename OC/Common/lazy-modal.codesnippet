@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>lazy-modal</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>- (NSArray *)&lt;#name#&gt; //重写get方法
+{
+    if (_&lt;#name#&gt; == nil)
+    {
+        NSString *path = [[NSBundle mainBundle] pathForResource:@"&lt;#name#&gt;" ofType:@"plist"];
+        NSArray *dictionarys = [NSArray arrayWithContentsOfFile:path];
+        NSLog(@"path");
+        NSMutableArray *arr = [NSMutableArray array];
+        for (NSDictionary *dic in dictionarys)
+        {
+            &lt;#Class#&gt; *&lt;#name2#&gt; = [&lt;#Class#&gt; &lt;#name1#&gt;:dic];
+                                   [arr addObject:&lt;#name2#&gt;];
+        }
+        
+        _heroes = arr;
+    }
+    return _heroes;
+    
+}
+</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>28D4BA27-15CA-4A74-89C6-880769E80B62</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>懒加载－模型</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>懒加载－模型</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

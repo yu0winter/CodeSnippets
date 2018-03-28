@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>Structure View</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>#pragma mark - + 静态方法
+#pragma mark - Life Cycle 生命周期
+#pragma mark └ Dealloc
+- (void)dealloc { }
+#pragma mark └ Init
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        [self commonInit];
+    }
+    return self;
+}
+
+- (void)commonInit {
+    
+}
+#pragma mark - Private Method    自定义方法
+#pragma mark - Event Response 事件响应
+#pragma mark - Delegate Realization 委托实现
+#pragma mark - Helper Method 帮助方法
+#pragma mark - Custom Accessors 自定义属性</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>7ED7C44A-0DD7-431F-950F-F86AE4A307C7</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Objective-C</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>View 标准代码结构</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Standardize Structure Of View</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>
