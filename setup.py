@@ -50,11 +50,6 @@ UserData = BASE_HOME + '/Library/Developer/Xcode/UserData'
 dst = BASE_HOME + '/Library/Developer/Xcode/UserData/CodeSnippets'
 backup = UserData + "/CodeSnippets." + datetime.datetime.now().strftime('%Y%m%d%H%M%S')
 
-
-
-
-
-
 # 生成发布的文件集
 # 1 检查系统目录，如果之前存在代码块文件则做个备份
 # 2 遍历当前路径
