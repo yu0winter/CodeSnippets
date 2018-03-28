@@ -1,5 +1,5 @@
 
-# Xcode Snippets
+# Code Snippets
 
 ## 使用前请阅读——[由代码块驱动的代码规范](./Guidline.html)
 
