@@ -72,7 +72,8 @@ if __name__ == "__main__":
     #     os.rename(dst,backup)
     #     os.mkdir(dst)
 
-    localPath = os.path.abspath('.')
+    # 锁定当前python文件的目录
+    localPath = os.path.dirname(os.path.realpath(__file__))
     detect_walk(localPath,".codesnippet")
 
     print '执行完成\n'
