@@ -3,21 +3,19 @@
 <plist version="1.0">
 <dict>
 	<key>IDECodeSnippetCompletionPrefix</key>
-	<string>blockvar</string>
+	<string>block</string>
 	<key>IDECodeSnippetCompletionScopes</key>
 	<array>
-		<string>CodeBlock</string>
+		<string>ClassInterfaceMethods</string>
 	</array>
 	<key>IDECodeSnippetContents</key>
-	<string>&lt;#returnType#&gt; (^&lt;#blockName#&gt;)(&lt;#parameterTypes#&gt;) = ^&lt;#returnType#&gt;(&lt;#parameters#&gt;) {
-            &lt;#code#&gt;
-        };</string>
+	<string>@property(nonatomic, copy) &lt;#returnType#&gt; (^&lt;#blockName#&gt;)(&lt;#parameterTypes#&gt;);</string>
 	<key>IDECodeSnippetIdentifier</key>
-	<string>A403E0E0-2CE2-4A82-B921-BEE3F46DB93C</string>
+	<string>B84470B1-B180-401B-8C53-43390D9124DA</string>
 	<key>IDECodeSnippetLanguage</key>
 	<string>Xcode.SourceCodeLanguage.Objective-C</string>
 	<key>IDECodeSnippetTitle</key>
-	<string>作为局部变量的block定义</string>
+	<string>Property For Block</string>
 	<key>IDECodeSnippetUserSnippet</key>
 	<true/>
 	<key>IDECodeSnippetVersion</key>
