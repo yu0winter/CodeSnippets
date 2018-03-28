@@ -9,6 +9,8 @@ import os
 import shutil
 # 获取文件夹权限
 import stat
+# 获取当前时间
+import datetime
 
 
 def detect_walk(dir_path,suffix):
@@ -34,9 +36,10 @@ def copyBackupFileIfNeed(_dst,_backup) :
     if os.path.exists(_dst) == False:
         os.mkdir(_dst)
     else: 
-        # 将原有代码段文件夹变更为备份
+        
         if os.path.exists(_backup):
             shutil.rmtree(_backup)
+        # 将原有代码段文件夹变更为备份
         os.rename(_dst,_backup)
         print('\n已备份至%s\n' %_backup)
         os.mkdir(_dst)
@@ -45,7 +48,10 @@ def copyBackupFileIfNeed(_dst,_backup) :
 BASE_HOME = os.environ['HOME']
 UserData = BASE_HOME + '/Library/Developer/Xcode/UserData'
 dst = BASE_HOME + '/Library/Developer/Xcode/UserData/CodeSnippets'
-backup = UserData + "/CodeSnippets.backup"
+backup = UserData + "/CodeSnippets." + datetime.datetime.now().strftime('%Y%m%d%H%M%S')
+
+
+
 
 
 
