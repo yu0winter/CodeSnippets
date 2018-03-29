@@ -1,7 +1,7 @@
 
 # Code Snippets
 
-## 使用前请阅读——[由代码块驱动的代码规范](./Guidline.html)
+## 使用前请阅读——[由代码块驱动的代码规范](./Guidline.md)
 
 ## Install
 
@@ -28,15 +28,38 @@ python setup.py
 | --- | --- |
 | All | 包含所有情况 |
 | Class Implementation |  类的实现代码 |
-| Class Interface Variables |Interface中声明的私有变量。(即大括号内的部分，如大括号内声明的_label。) |
-| Class Interface Methods |  Interface中方法声明部分。（大括号外的部分。）|
+| Class Interface Variables | 请看下文备注 |
+| Class Interface Methods | 请看下文备注 |
 | Top Level | Class 之外 |
 | Code Expression |  |
 | Function or Method | |
 | Preprocessor directive | |
 | String or Commont | |
 
+
+#### 备注
+
 需要额外注意的就是 *Class Interface Variables* 和 *Class Interface Methods* 的分别。
+
+
+* 理论上是这样的： 
+```objc
+@interface TargetViewController () {
+ // Class Interface Variables
+}
+// Class Interface Methods
+@end
+```
+
+* 实际上是这样的：
+```objc
+@interface TargetViewController ()
+ // Class Interface Variables  && Class Interface Methods  
+ // TargetViewController.m 文件中,以上两种类型失效了！！！！ 推断：这是Xcode自带的bug。
+@end
+```
+
+* 因此面对这种情况需要将scope 设置成All，才能保证代码块被检索到。
 
 
 ## Q&A
